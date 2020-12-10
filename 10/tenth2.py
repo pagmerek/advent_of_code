@@ -21,8 +21,10 @@ with open('input') as f:
     data_table = [int(x.strip()) for x in data_table]
     data_table.sort()
     data_table.append(data_table[-1]+3)
+    data_table.insert(0,0)
     paths_from = {}
     print(data_table)
     print(find_path(data_table,paths_from,0))
+    print(paths_from)
 
     
