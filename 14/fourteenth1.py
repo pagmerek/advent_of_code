@@ -2,7 +2,7 @@
 with open('input') as f:
     data = f.readlines()
     data = [x.strip() for x in data]
-    memory = [0]*10000000
+    memory = {}
     mask = ''
     for line in data:
         if(line[:4]=='mask'):
@@ -17,4 +17,4 @@ with open('input') as f:
                 elif mask[i] == '0':
                     value &= ~(1<<(len(mask)-i-1))
             memory[index]=value    
-    print(sum(memory))                
+    print(sum(memory.values()))                
