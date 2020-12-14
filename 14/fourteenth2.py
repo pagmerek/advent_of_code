@@ -11,7 +11,6 @@ with open('input') as f:
     for line in data:
         if(line[:4]=='mask'):
             mask = line[7:]
-            print(mask)
         else:
             line = line.split()
             index = int(line[0][4:-1])
