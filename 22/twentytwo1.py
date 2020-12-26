@@ -15,7 +15,7 @@ if __name__ == '__main__':
     while(p1_deck and p2_deck):
         p1_card = p1_deck.pop(0)
         p2_card = p2_deck.pop(0)
-        if(p1_card>p2_card):
+        if(p1_card > p2_card):
             p1_deck.append(p1_card)
             p1_deck.append(p2_card)
         else:
@@ -24,6 +24,6 @@ if __name__ == '__main__':
     winner_deck = p1_deck if len(p2_deck) == 0 else p2_deck
     result = 0
     print(winner_deck)
-    for z, card in enumerate(reversed(winner_deck),1):
+    for z, card in enumerate(reversed(winner_deck), 1):
         result += z*card
     print(result)

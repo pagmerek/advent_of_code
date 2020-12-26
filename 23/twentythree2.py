@@ -36,6 +36,6 @@ def solve(raw):
     print(cups[1]*cups[2])
 
 if __name__ == '__main__':
-    with open('input') as f:
+    with open('23/input') as f:
         raw = f.read()
     print(solve(raw))
