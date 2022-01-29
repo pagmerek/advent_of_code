@@ -1,6 +1,6 @@
 import scala.io.Source
 
-object Day1 {
+object Day4 {
 
     def checkForWinner(board : Array[Array[(Int, Boolean)]]) : Boolean = {
         val winHori = board.map(_.forall(_._2)).exists(_.==(true))       
