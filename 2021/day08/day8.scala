@@ -1,6 +1,6 @@
 import scala.io.Source
 
-object Day7 {
+object Day8 {
     def first(x: List[(List[String], List[String])]): Int = x match {
        case Nil => 0
        case (_,b)::xs => b.filter(w => List(2,3,4,7) contains w.length).length + first(xs)
