@@ -1,0 +1,5 @@
+*/zig-out/*
+*/zig-cache/*
+
+**/test-input.txt
+**/full-input.txt
